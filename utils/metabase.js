@@ -1,6 +1,6 @@
 const axios = require('axios');
 const { Product } = require('../models');
-const logger = require('../utils/logger');
+const logger = require('./logger');
 
 const insertIntoMetabase = async () => {
   try {

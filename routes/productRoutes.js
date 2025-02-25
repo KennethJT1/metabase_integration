@@ -1,7 +1,7 @@
 const express = require('express');
-const { fetchProductData } = require('../services/productService');
-const { insertIntoMetabase } = require('../services/metabaseService');
-const { authenticateJWT } = require('../middleware/auth');
+const { fetchProductData } = require('../controllers/productController');
+const { authenticateJWT } = require('../middlewares/auth');
+const { inportDataToMetabase } = require('../controllers/productController');
 
 const router = express.Router();
 
@@ -14,13 +14,6 @@ router.get('/fetch', authenticateJWT, async (req, res) => {
   }
 });
 
-router.post('/import', authenticateJWT, async (req, res) => {
-  try {
-    await insertIntoMetabase();
-    res.json({ message: 'Data imported successfully' });
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
+router.post('/import', authenticateJWT,inportDataToMetabase );
 
 module.exports = router;
