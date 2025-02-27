@@ -1,5 +1,12 @@
 const { createLogger, format, transports } = require("winston");
 const { combine, timestamp, json, colorize } = format;
+const fs = require("fs");
+const path = require("path");
+
+const logDir = path.join(__dirname, "../logs");
+if (!fs.existsSync(logDir)) {
+  fs.mkdirSync(logDir);
+}
 
 const consoleLogFormat = format.combine(
   format.colorize(),
@@ -13,16 +20,20 @@ const logger = createLogger({
   format: combine(colorize(), timestamp(), json()),
   transports: [
     new transports.Console({
-      format: consoleLogFormat,
+      format: combine(
+        colorize(),
+        consoleLogFormat
+      ),
     }),
-    new transports.File({ filename: "app.log" }),
-  ],
-});
+    new transports.File({
+      filename: path.join(logDir, "info.log"),
+      level: "info",
+    }),
 
-// if (process.env.NODE_ENV !== "production") {
-//   logger.add(
-//     transports.Console({ format: format.simple() })
-//   );
-// }
+    new transports.File({
+      filename: path.join(logDir, "error.log"),
+      level: "error",
+    }),  ],
+});
 
 module.exports = logger;

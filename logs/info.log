@@ -1,0 +1,8 @@
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Table 'jsonplaceholder_2' created or already exists","timestamp":"2025-02-27T15:26:12.546Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Metabase schema sync triggered successfully","timestamp":"2025-02-27T15:26:15.896Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Table 'jsonplaceholder_2' synced to Metabase","timestamp":"2025-02-27T15:26:15.897Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/products/sync\",\"status\":\"200\",\"responseTime\":\"7333.605\"}","timestamp":"2025-02-27T15:26:17.562Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Table 'jsonplaceholder' created or already exists","timestamp":"2025-02-27T15:27:38.643Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Metabase schema sync triggered successfully","timestamp":"2025-02-27T15:27:40.917Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Table 'jsonplaceholder' synced to Metabase","timestamp":"2025-02-27T15:27:40.918Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/products/sync\",\"status\":\"200\",\"responseTime\":\"7382.147\"}","timestamp":"2025-02-27T15:27:42.340Z"}
