@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  metabase_db:
+    image: postgres
+    environment:
+      POSTGRES_DB: metabase_internal
+      POSTGRES_USER: metabase_user
+      POSTGRES_PASSWORD: metabase_password
+    networks:
+      - metabase_net
+    volumes:
+      - metabase_data:/var/lib/postgresql/data
+
+  metabase:
+    image: metabase/metabase
+    depends_on:
+      - metabase_db
+    ports:
+      - "3000:3000"
+    environment:
+      MB_DB_TYPE: postgres
+      MB_DB_DBNAME: metabase_internal
+      MB_DB_PORT: 5432
+      MB_DB_USER: metabase_user
+      MB_DB_PASS: metabase_password
+      MB_DB_HOST: metabase_db
+    networks:
+      - metabase_net
+
+networks:
+  metabase_net:
+
+volumes:
+  metabase_data:

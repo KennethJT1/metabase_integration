@@ -6,16 +6,19 @@ const rateLimit = require("express-rate-limit");
 
 const productRoutes = require("./routes/productRoutes");
 const logger = require("./utils/logger");
-const sequelize = require("./config/connection")
-const {PORT} = require("./config/configSource")
+const { sequelize } = require("./config/connection");
+const { PORT } = require("./config/configSource");
+
 const morganFormat = ":method :url :status :response-time ms";
 
 const app = express();
-const port = PORT || 5467
+const port = PORT || 5467;
 
-sequelize.authenticate()
-  .then(() => console.log("Database connected successfully"))
-  .catch((err) => console.error("Unable to connect to database:", err));
+sequelize
+  .sync()
+  .then(() => console.log("✅ Database & tables created!"))
+  .catch((err) => console.error("❌ Error syncing database:", err));
+
 app.use(
   morgan(morganFormat, {
     stream: {

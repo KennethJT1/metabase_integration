@@ -1,2 +1,8 @@
-{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"200\",\"responseTime\":\"29.939\"}","timestamp":"2025-02-25T10:57:40.837Z"}
-{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/favicon.ico\",\"status\":\"404\",\"responseTime\":\"10.235\"}","timestamp":"2025-02-25T10:57:41.195Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Table 'fikeya' created or already exists","timestamp":"2025-02-27T15:15:09.213Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Metabase schema sync triggered successfully","timestamp":"2025-02-27T15:15:11.889Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Table 'fikeya' synced to Metabase","timestamp":"2025-02-27T15:15:11.890Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/products/sync\",\"status\":\"200\",\"responseTime\":\"7290.251\"}","timestamp":"2025-02-27T15:15:12.634Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Table 'lololo' created or already exists","timestamp":"2025-02-27T15:15:53.326Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Metabase schema sync triggered successfully","timestamp":"2025-02-27T15:15:55.801Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Table 'lololo' synced to Metabase","timestamp":"2025-02-27T15:15:55.802Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/products/sync\",\"status\":\"200\",\"responseTime\":\"5295.671\"}","timestamp":"2025-02-27T15:15:56.619Z"}

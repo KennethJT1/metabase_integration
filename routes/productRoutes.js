@@ -1,19 +1,11 @@
 const express = require('express');
-const { fetchProductData } = require('../controllers/productController');
-const { authenticateJWT } = require('../middlewares/auth');
-const { inportDataToMetabase } = require('../controllers/productController');
+const { syncProductData, generateApiKey } = require('../controllers/productController');
+const { verifyToken } = require('../middlewares/auth');
 
 const router = express.Router();
 
-router.get('/fetch', authenticateJWT, async (req, res) => {
-  try {
-    const products = await fetchProductData();
-    res.json(products);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
-
-router.post('/import', authenticateJWT,inportDataToMetabase );
+router.post('/sync', syncProductData);
+// router.post('/sync', verifyToken, syncProductData);
+router.post('/generate-api-key', verifyToken, generateApiKey);
 
 module.exports = router;

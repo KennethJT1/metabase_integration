@@ -1,22 +1,13 @@
-const jwt = require('jsonwebtoken');
-const { User } = require('../models');
-const { JWT_SECRET } = require('../config/configSource');
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
 
-const authenticateJWT = (req, res, next) => {
-  const token = req.header('Authorization');
-  if (!token) return res.status(401).json({ message: 'Unauthorized' });
+exports.verifyToken = (req, res, next) => {
+  const token = req.headers["authorization"];
+  if (!token) return res.status(401).json({ message: "Unauthorized" });
 
-  jwt.verify(token, JWT_SECRET, (err, user) => {
-    if (err) return res.status(403).json({ message: 'Forbidden' });
-    req.user = user;
+  jwt.verify(token.split(" ")[1], process.env.JWT_SECRET, (err, decoded) => {
+    if (err) return res.status(403).json({ message: "Invalid token" });
+    req.user = decoded;
     next();
   });
 };
-
-const generateApiKey = async (userId) => {
-  const apiKey = require('crypto').randomBytes(32).toString('hex');
-  await User.update({ apiKey }, { where: { id: userId } });
-  return apiKey;
-};
-
-module.exports = { authenticateJWT, generateApiKey };
