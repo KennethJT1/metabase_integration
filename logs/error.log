@@ -1,0 +1,37 @@
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync users: string violation: updatedAt cannot be an array or an object","timestamp":"2025-03-07T10:50:43.506Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync surveys: string violation: updatedAt cannot be an array or an object","timestamp":"2025-03-07T10:50:46.317Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync survey-types: string violation: updatedAt cannot be an array or an object","timestamp":"2025-03-07T10:50:49.037Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync users: fetchData is not defined","timestamp":"2025-03-07T11:19:28.223Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync accessments: fetchData is not defined","timestamp":"2025-03-07T11:19:28.428Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync assignments: fetchData is not defined","timestamp":"2025-03-07T11:19:28.596Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync locations: fetchData is not defined","timestamp":"2025-03-07T11:19:28.740Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync projects: fetchData is not defined","timestamp":"2025-03-07T11:19:28.876Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync orgs: fetchData is not defined","timestamp":"2025-03-07T11:19:29.003Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync surveys: fetchData is not defined","timestamp":"2025-03-07T11:19:29.154Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync survey-types: fetchData is not defined","timestamp":"2025-03-07T11:19:29.383Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync users: fetchData is not defined","timestamp":"2025-03-07T11:19:53.511Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync accessments: fetchData is not defined","timestamp":"2025-03-07T11:19:53.737Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync assignments: fetchData is not defined","timestamp":"2025-03-07T11:19:53.980Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync locations: fetchData is not defined","timestamp":"2025-03-07T11:19:54.429Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync projects: fetchData is not defined","timestamp":"2025-03-07T11:19:54.591Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync orgs: fetchData is not defined","timestamp":"2025-03-07T11:19:54.879Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync surveys: fetchData is not defined","timestamp":"2025-03-07T11:19:55.109Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync survey-types: fetchData is not defined","timestamp":"2025-03-07T11:19:55.248Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync users: fetchData is not defined","timestamp":"2025-03-07T11:20:05.107Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync accessments: fetchData is not defined","timestamp":"2025-03-07T11:20:05.363Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync assignments: fetchData is not defined","timestamp":"2025-03-07T11:20:05.557Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync locations: fetchData is not defined","timestamp":"2025-03-07T11:20:05.821Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync projects: fetchData is not defined","timestamp":"2025-03-07T11:20:05.998Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync orgs: fetchData is not defined","timestamp":"2025-03-07T11:20:06.187Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync surveys: fetchData is not defined","timestamp":"2025-03-07T11:20:06.360Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync survey-types: fetchData is not defined","timestamp":"2025-03-07T11:20:06.686Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync users: processUser is not a function","timestamp":"2025-03-07T11:20:13.889Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync surveys: processUser is not a function","timestamp":"2025-03-07T11:20:15.212Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync survey-types: processUser is not a function","timestamp":"2025-03-07T11:20:15.460Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync users: processUser is not a function","timestamp":"2025-03-07T11:21:36.815Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync users: processUser is not defined","timestamp":"2025-03-07T11:27:16.729Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync surveys: processUser is not defined","timestamp":"2025-03-07T11:27:17.774Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync survey-types: processUser is not defined","timestamp":"2025-03-07T11:27:17.915Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync users: allUsers is not defined","timestamp":"2025-03-07T11:27:51.860Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync surveys: allUsers is not defined","timestamp":"2025-03-07T11:27:53.021Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Failed to sync survey-types: allUsers is not defined","timestamp":"2025-03-07T11:27:53.218Z"}

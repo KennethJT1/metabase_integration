@@ -8,6 +8,7 @@ const productRoutes = require("./routes/productRoutes");
 const logger = require("./utils/logger");
 const { sequelize } = require("./config/connection");
 const { PORT } = require("./config/configSource");
+require("./controllers/syncDataTask"); 
 
 const morganFormat = ":method :url :status :response-time ms";
 

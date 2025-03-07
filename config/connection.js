@@ -79,7 +79,7 @@ const defineDynamicModel = (tableName, dataSample) => {
     }
   });
 
-  return sequelize.define(tableName, attributes, { timestamps: true });
+  return sequelize.define(tableName, attributes, { timestamps: false });
 };
 
 module.exports = { sequelize, inferDataType, defineDynamicModel };

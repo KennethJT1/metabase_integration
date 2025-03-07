@@ -45,6 +45,21 @@ async function triggerMetabaseSync() {
 
   logger.info("✅ Metabase schema sync triggered successfully");
 }
+async function refreshMetabaseSchema() {
+  const sessionToken = await getMetabaseSessionToken();
+
+  const METABASE_API_URL = `${METABASE_URL}/api/database/${METABASE_DB_ID}/sync_schema`;
+
+  await axios.post(
+    METABASE_API_URL,
+    {},
+    {
+      headers: { "X-Metabase-Session": sessionToken },
+    }
+  );
+
+  logger.info("✅ Metabase schema sync triggered successfully");
+}
 
 // Example combined flow — after table creation
 async function createTableAndSyncMetabase(tableName, tableFields) {
@@ -69,4 +84,8 @@ async function createTableAndSyncMetabase(tableName, tableFields) {
   }
 }
 
-module.exports = { createTableAndSyncMetabase };
+module.exports = {
+  refreshMetabaseSchema,
+  triggerMetabaseSync,
+  createTableAndSyncMetabase,
+};
